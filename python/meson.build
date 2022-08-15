@@ -12,6 +12,10 @@ if get_option('pydev_install').enabled()
     # the moduele '../' causes meta to search for python module in the project root directory of a master project
     conf_data.set('PYDEV_MODULES','pydev_install_modules = ["tools", "navigation","gridding","../"]')   
     conf_data.set('PYDEV_INSTALL',fs.read('themachinethatgoesping/in.pydev_install.py'))
+else
+    conf_data.set('PYDEV_SRC_PATH','')
+    conf_data.set('PYDEV_MODULES','')
+    conf_data.set('PYDEV_INSTALL','')
 endif
 
 
