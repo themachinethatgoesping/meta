@@ -17,7 +17,7 @@ Enable quantitative processing of multibeam and singlebeam echosounder systems
 #import the module functions into the current namespace
 modules_installed = []
 
-#TODO: add warnings for installed packages with missing dependcies
+#TODO: add warnings for installed packages with missing dependencies
 
 try:
   from themachinethatgoesping import tools
