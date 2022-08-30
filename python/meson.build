@@ -18,6 +18,7 @@ else
     conf_data.set('PYDEV_INSTALL','')
 endif
 
+conf_data.set('THEMACHINETHATGOESPING_VERSION',get_option('main_project_version'))
 
 
 pymod = import('python').find_installation(get_option('python_path'), required : get_option('build_pythonmodule'))
