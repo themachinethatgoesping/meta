@@ -27,6 +27,8 @@ except:
 try:
     from themachinethatgoesping import tools_ext
     __modules_installed__.append(("tools_ext", tools_ext.__version__))
+    from themachinethatgoesping import scripts
+    __modules_installed__.append(("scripts", scripts.__version__))
 except:
     pass
 
