@@ -21,13 +21,13 @@ endif
 conf_data.set('THEMACHINETHATGOESPING_VERSION',get_option('main_project_version'))
 
 
-pymod = import('python').find_installation(get_option('python_path'), required : get_option('build_pythonmodule'))
+pymod = import('python').find_installation(get_option('python_path'), required : get_option('build_pythonmodule'), pure: false)
 
 if get_option('build_pythonmodule').enabled()
     configure_file(input : 'themachinethatgoesping/in.__init__.py',
                 output : '__init__.py',
                 configuration : conf_data,
-                install_dir : pymod.get_install_dir() + 'themachinethatgoesping', 
+                install_dir : pymod.get_install_dir(subdir: 'themachinethatgoesping'), 
                 install_tag : 'python-runtime'
                 )
 endif
