@@ -45,6 +45,12 @@ except:
     pass
 
 try:
+    from themachinethatgoesping import pingprocessing
+    __modules_installed__.append(("pingprocessing", pingprocessing.__version__))
+except:
+    pass
+
+try:
     from themachinethatgoesping import gridding
     __modules_installed__.append(("gridding", gridding.__version__))
 except:
