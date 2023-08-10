@@ -33,6 +33,12 @@ except:
     pass
 
 try:
+    from themachinethatgoesping import algorithms
+    __modules_installed__.append(("algorithms", algorithms.__version__))
+except:
+    pass
+
+try:
     from themachinethatgoesping import navigation
     __modules_installed__.append(("navigation", navigation.__version__))
 except:
