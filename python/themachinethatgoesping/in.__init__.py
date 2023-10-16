@@ -19,14 +19,10 @@ __modules_installed__ = []
 # TODO: add warnings for installed packages with missing dependencies
 
 try:
+    from themachinethatgoesping import tools_cppy
+    __modules_installed__.append(("tools_cppy", tools_cppy.__version__))
     from themachinethatgoesping import tools
     __modules_installed__.append(("tools", tools.__version__))
-except:
-    pass
-
-try:
-    from themachinethatgoesping import tools_ext
-    __modules_installed__.append(("tools_ext", tools_ext.__version__))
     from themachinethatgoesping import scripts
     __modules_installed__.append(("scripts", scripts.__version__))
 except:
@@ -51,6 +47,8 @@ except:
     pass
 
 try:
+    from themachinethatgoesping import pingprocessing_cppy
+    __modules_installed__.append(("pingprocessing_cppy", pingprocessing_cppy.__version__))
     from themachinethatgoesping import pingprocessing
     __modules_installed__.append(("pingprocessing", pingprocessing.__version__))
 except:
