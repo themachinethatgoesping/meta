@@ -41,6 +41,8 @@ except:
     pass
 
 try:
+    from themachinethatgoesping import echosounders_cppy as echosounders
+    __modules_installed__.append(("echosounders_cppy", echosounders_cppy.__version__))
     from themachinethatgoesping import echosounders
     __modules_installed__.append(("echosounders", echosounders.__version__))
 except:
