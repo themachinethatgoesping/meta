@@ -19,8 +19,8 @@ __modules_installed__ = []
 # TODO: add warnings for installed packages with missing dependencies
 
 try:
-    from themachinethatgoesping import tools_cppy
-    __modules_installed__.append(("tools_cppy", tools_cppy.__version__))
+    from themachinethatgoesping import tools_nanopy
+    __modules_installed__.append(("tools_nanopy", tools_nanopy.__version__))
     from themachinethatgoesping import tools
     __modules_installed__.append(("tools", tools.__version__))
     from themachinethatgoesping import scripts
@@ -29,28 +29,32 @@ except:
     pass
 
 try:
-    from themachinethatgoesping import algorithms
-    __modules_installed__.append(("algorithms", algorithms.__version__))
-except:
-    pass
-
-try:
+    from themachinethatgoesping import navigation_nanopy
+    __modules_installed__.append(("navigation_nanopy", navigation_nanopy.__version__))
     from themachinethatgoesping import navigation
     __modules_installed__.append(("navigation", navigation.__version__))
 except:
     pass
 
 try:
-    from themachinethatgoesping import echosounders_cppy as echosounders
-    __modules_installed__.append(("echosounders_cppy", echosounders_cppy.__version__))
+    from themachinethatgoesping import algorithms_nanopy
+    __modules_installed__.append(("algorithms_nanopy", algorithms_nanopy.__version__))
+    from themachinethatgoesping import algorithms
+    __modules_installed__.append(("algorithms", algorithms.__version__))
+except:
+    pass
+
+try:
+    from themachinethatgoesping import echosounders_nanopy as echosounders
+    __modules_installed__.append(("echosounders_nanopy", echosounders_nanopy.__version__))
     from themachinethatgoesping import echosounders
     __modules_installed__.append(("echosounders", echosounders.__version__))
 except:
     pass
 
 try:
-    from themachinethatgoesping import pingprocessing_cppy
-    __modules_installed__.append(("pingprocessing_cppy", pingprocessing_cppy.__version__))
+    from themachinethatgoesping import pingprocessing_nanopy
+    __modules_installed__.append(("pingprocessing_nanopy", pingprocessing_nanopy.__version__))
     from themachinethatgoesping import pingprocessing
     __modules_installed__.append(("pingprocessing", pingprocessing.__version__))
 except:

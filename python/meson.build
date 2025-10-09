@@ -10,7 +10,7 @@ conf_data = configuration_data()
 if get_option('pydev_install').enabled()
     conf_data.set('PYDEV_SRC_PATH','pydev_install_src_path = "' + meson.project_source_root() +'/../"')
     # the moduele '../' causes meta to search for python module in the project root directory of a master project
-    conf_data.set('PYDEV_MODULES','pydev_install_modules = ["tools", "navigation", "gridding", "echosounders", "pingprocessing", "../"]')   
+    conf_data.set('PYDEV_MODULES','pydev_install_modules = ["tools", "navigation", "algorithms", "gridding", "echosounders", "pingprocessing", "../"]')   
     conf_data.set('PYDEV_INSTALL',fs.read('themachinethatgoesping/in.pydev_install.py'))
 else
     conf_data.set('PYDEV_SRC_PATH','')
