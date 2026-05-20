@@ -61,6 +61,14 @@ except:
     pass
 
 try:
+    # from themachinethatgoesping import widgets_nanopy
+    # __modules_installed__.append(("widgets_nanopy", widgets_nanopy.__version__))
+    from themachinethatgoesping import widgets
+    __modules_installed__.append(("widgets", widgets.__version__))
+except:
+    pass
+
+try:
     from themachinethatgoesping import gridding
     __modules_installed__.append(("gridding", gridding.__version__))
 except:
