@@ -45,7 +45,7 @@ except:
     pass
 
 try:
-    from themachinethatgoesping import echosounders_nanopy as echosounders
+    from themachinethatgoesping import echosounders_nanopy
     __modules_installed__.append(("echosounders_nanopy", echosounders_nanopy.__version__))
     from themachinethatgoesping import echosounders
     __modules_installed__.append(("echosounders", echosounders.__version__))
