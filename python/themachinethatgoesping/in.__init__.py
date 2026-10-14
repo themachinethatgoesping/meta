@@ -45,18 +45,18 @@ except:
     pass
 
 try:
-    from themachinethatgoesping import echosounders_nanopy
-    __modules_installed__.append(("echosounders_nanopy", echosounders_nanopy.__version__))
-    from themachinethatgoesping import echosounders
-    __modules_installed__.append(("echosounders", echosounders.__version__))
-except:
-    pass
-
-try:
     from themachinethatgoesping import pingprocessing_nanopy
     __modules_installed__.append(("pingprocessing_nanopy", pingprocessing_nanopy.__version__))
     from themachinethatgoesping import pingprocessing
     __modules_installed__.append(("pingprocessing", pingprocessing.__version__))
+except:
+    pass
+
+try:
+    from themachinethatgoesping import echosounders_nanopy
+    __modules_installed__.append(("echosounders_nanopy", echosounders_nanopy.__version__))
+    from themachinethatgoesping import echosounders
+    __modules_installed__.append(("echosounders", echosounders.__version__))
 except:
     pass
 
